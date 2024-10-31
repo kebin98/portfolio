@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html class="no-js"  lang="en">
+
+  <head>
+	<meta name="viewport" content= "initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="new.css">
+		<title>Kevin Nguyen Portfolio</title>
+<link rel="icon" type="image/png" sizes="32x32" href=url("icon.png")>  
+  
+  </head>
+  
+  <body onload = "welcome()">
+  <div class = "entity">
+  <div class = "main" style="--my-var: url(menu1.gif)" id = "main">
+ <h1 id="GFG" class="image">
+       <div id = "menu2">
+	   
+	   <div class = "textbox" style="visibility:hidden"; id="textbox"> Kevin Nguyen
+	   <br> "kebin98"
+	   <br> Starting from a 
+	   <br> young age, video 
+	   <br> game design has 
+	   <br> followed me, from
+	   <br> 2nd place at the 2013 Kodu
+	   <br> Kup Competition to creating
+	   <br> a racing game as part of my
+	   <br> university final project,
+	   <br> evaluating accessible
+	   <br> experiences in gaming.
+	   <br> Currently available for
+	   <br> composing/programming work. document.
+	   
+	   
+	   
+	   
+	   </div>
+
+	   <div class = "textbox2" style="visibility:hidden"; id="textbox2"> Music Test
+	   	<br>Current song:
+<test class = "text"; id="songTitle"></test>
+<br>Year:
+<test class = "text"; id="songYear"></test>
+<br>Origin:
+<test class = "text"; id="songOrigin"></test>
+<br>
+<br>Description:
+<test class = "text"; id="songDescription"></test>
+
+
+
+	</div>
+	   
+	   
+
+	   </div>
+    </h1></div>	
+
+
+				<button id="thebutton5" class = "thebutton5" onclick="changeBackgroundImageR()" style="visibility: hidden;" >
+					</button>
+	
+	<div id = "add"></div>
+	
+	
+	    <button class = "thebutton" onmouseout="changeBackgroundImage2()" onclick="changeBackgroundImage3(); " onmouseover="changeBackgroundImage()">
+				
+			</button>
+		<button class = "thebutton2" onclick="changeBackgroundImage42()" onmouseout="changeBackgroundImage32()" onmouseover="changeBackgroundImage4()">
+			</button>
+		<button class = "thebutton3" onclick="changeBackgroundImage52()" onmouseout="changeBackgroundImage32()" onmouseover="changeBackgroundImage5()">
+			</button>
+		<button class = "thebutton4" onclick="game()" onmouseout="changeBackgroundImage32()" onmouseover="changeBackgroundImage6()">
+			</button>
+			
+		<div id = "musicicons" style="visibility:hidden";>
+		<button class = "musicplay" onclick="playsong()" >
+		<button class = "musicpause" onclick="pausesong()" >
+		<button class = "musicstop" onclick="stopsong()" >
+		<button class = "musicnext" onclick="nextsong()" >
+		<button class = "musicback" onclick="backsong()" >
+			</button>	
+
+
+<audio id="audio">
+<source src="0.mp3" type="audio/mpeg">
+</audio>
+
+		</div>
+
+		<h1 id="NEW" class="image">
+
+		<h1>
+			
+		<div id="demo" >
+
+		</div>
+			
+			<script>
+
+
+					
+				function welcome(){
+					let headingID = document.getElementById("GFG");
+					
+					headingID.classList.add("menu1");
+					headingID.classList.add("menu2");
+					headingID.classList.add("return");
+					x = 0;
+					document.getElementById("main").style = "--my-var: url(menu1.gif)";
+					document.getElementById("thebutton5").visibility = "hidden;";
+					playing = 0;
+
+				}
+
+			
+				function changeBackgroundImage() {
+					if(x == 0){
+					document.getElementById("main").style = "--my-var: url(menu2.gif)";
+				}}
+				
+				function changeBackgroundImage2() {
+					if(x == 0){				
+					document.getElementById("main").style = "--my-var: url(menu1.gif)";
+				}}
+				
+				function changeBackgroundImage4() {
+					if(x == 1){
+					document.getElementById("main").style = "--my-var: url(s1.gif)";
+					}
+				}
+				
+				function changeBackgroundImage5() {
+					if(x == 1){
+					document.getElementById("main").style = "--my-var: url(s2.gif)";
+					}
+				}	
+				
+				function changeBackgroundImage6() {
+					if(x == 1){
+					document.getElementById("main").style = "--my-var: url(s3.gif)";
+					}
+				}	
+				
+				
+				function changeBackgroundImage32() {
+					if(x == 1){
+					document.getElementById("main").style = "--my-var: url(sn.gif)";
+			document.getElementById("textbox").style = "visibility:hidden";
+			document.getElementById("textbox2").style = "visibility:hidden";
+			document.getElementById("thebutton5").style = "visibility:hidden";
+			document.getElementById("musicicons").style = "visibility:hidden";
+					}
+				}
+				function changeBackgroundImage42() {
+					if(x == 1){
+					document.getElementById("main").style = "--my-var: url(4.gif)";
+						playsound();
+					document.getElementById("menu2").visibility = "visible;";
+					
+					document.getElementById("textbox").style = "visibility:visible";
+					x = 2;
+
+					document.getElementById("thebutton5").style = "visibility:visible";
+					}
+				}
+				function changeBackgroundImage52() {
+					if(x == 1){
+					document.getElementById("main").style = "--my-var: url(6.gif)";
+						playsound();
+					document.getElementById("menu2").visibility = "visible;";
+					document.getElementById("textbox2").style = "visibility:visible";
+					
+					x = 3;
+					songId = 3;
+					document.getElementById("thebutton5").style = "visibility:visible";
+					songRefresh();
+					
+			document.getElementById("musicicons").style = "visibility:visible";
+					}
+				}
+				
+				function changeBackgroundImageR() {
+					if(x > 1){
+						document.getElementById("main").style = "--my-var: url(sn.gif)";
+						x = 1;
+						playsound();
+					document.getElementById("textbox").style = "visibility:hidden";
+			document.getElementById("textbox2").style = "visibility:hidden";
+			document.getElementById("thebutton5").style = "visibility:hidden";
+			document.getElementById("musicicons").style = "visibility:hidden";
+					}
+				}
+				
+				function changeBackgroundImage3() {
+					if(x == 0){
+						document.getElementById("main").style = "--my-var: url(sn.gif)";
+						x = 1;
+						playsound();
+					}
+				}
+
+
+				function playsound2(){
+					if(x == 1){
+						let beat = new Audio('test.mp3');
+						beat.play();
+					}
+				}
+				function playsound(){
+					let beat = new Audio('test.mp3');
+					beat.play();
+				}
+
+				function excelread(){
+				var excelFile = Excel.Open(url("Book1.xlsx"));
+				var excelSheet = excelFile.SheetByTitle("Sheet1");
+				var valueA = excelSheet.Cell("B",2).Value;
+				}
+				function playsong(){
+					audio = document.getElementById("audio");
+
+					if(playing == 0){
+document.getElementById("audio").src = (""+songId+".mp3");
+						audio.play();
+						playing = 1;
+						return;
+					}
+
+					if(playing == 1){
+
+						audio.load();
+
+						audio.play();
+						playing = 0;
+						return;
+					}
+
+					if(playing == 2){
+
+						audio.play();
+
+						playing = 0;
+						return;
+					}
+
+					if(playing == 3){
+document.getElementById("audio").src = (""+songId+".mp3");
+						audio.load();
+
+						audio.play();
+
+						playing = 1;
+						return;
+					}
+				}
+
+				function pausesong(){
+					if(playing == 3){
+document.getElementById("audio").src = (""+songId+".mp3");
+						audio.load();
+					}
+
+					audio = document.getElementById("audio");
+						audio.pause();
+						playing = 2;
+						return;
+				}
+
+				function stopsong(){
+document.getElementById("audio").src = (""+songId+".mp3");
+
+						audio.load();
+					audio = document.getElementById("audio");
+						audio.load();
+						playing = 0;
+						return;
+				}
+function game(){
+if(x == 1){
+playsound();
+window.open('https://gx.games/games/zen78u/mode-b-demo/tracks/afedd5d7-1395-4252-ad90-e137d6b9af09/', '_blank');
+}
+}
+				function nextsong(){
+
+					audio = document.getElementById("audio");
+						songId += 1;
+						if(songId > songMax){songId = 0;}
+					if(playing == 2){
+						audio.load();
+document.getElementById("audio").src = (""+songId+".mp3");
+						audio.load();
+}
+if(playing == 1){playing = 3;}
+
+
+songRefresh();
+						
+						
+						return;
+				}
+				function backsong(){
+
+					audio = document.getElementById("audio");
+						songId -= 1;
+						if(songId < 0){songId = songMax;}
+
+					if(playing == 2){
+						audio.load();
+document.getElementById("audio").src = (""+songId+".mp3");
+						audio.load();
+}
+if(playing == 1){playing = 3;}
+songRefresh();						
+				
+						return;
+				}
+
+function songRefresh(){
+
+var titles = [
+"Sandstream",
+"kevin98",
+"Infinite Lustful Ecstasy",
+"A Man",
+"Save Synth",
+"Midnight",
+"n0sejob Avenue",
+"Hugsh",
+"the"
+];
+
+var years = [
+"2021",
+"2020, 2021",
+"2021, 2024",
+"2024",
+"2024",
+"2024",
+"2022, 2024",
+"2024",
+"2024"
+
+];
+
+var origins = [
+"Smolvin (Album)",
+"Smolvin (Album)",
+"Illiterate Auteur Rice Farmer (Album)",
+"(WIP) Ramblings of Kebin in the Dark (Album)",
+"(WIP) Ramblings of Kebin in the Dark (Album)",
+"(WIP) Ramblings of Kebin in the Dark (Album)",
+"(WIP) Ramblings of Kebin in the Dark (Album)",
+"(WIP) Ramblings of Kebin in the Dark (Album)",
+"(WIP) Ramblings of Kebin in the Dark (Album)"
+];
+
+var descriptions= [
+"One of my oldest songs, I was heavily inspired by Touhou 5's title screen song. To this day I find this one a classic due to the converging melodies that go together surprisingly nicely. \n I have probably remixed this song too many times to count, for a while this would be my go-to song if someone was to ask me what kind of music I make.",
+"Although my actual first song was Kevin64, this is technically the first proper song I ever made that wasn't just me fiddling with LMMS. This was my first attempt to make a song in the style of the old PC98 Touhou games. What really strikes me is that many remixes exist of this particular song, which I struggled to make the melody for.",
+"The Femvin theme song. This song embodies all the adventures and recreations of the stories I had been trying to make since I was young. \n Many of the melodies of this song were derived off the failed song named 'Boop Ensuite', following that mistake, I focused really heavily in trying to make this song really simple with recurring melodies that would mutate. \n I tweaked the song a bit over time to mutate the melodies further as the song went on.",
+"My first proper attempt at vaporwave. I had previously learnt to pitch blend with synth chords and utilised the atmospheric sounds that I could get out of certain instruments. This is definitely a more minimalist track as compared to the style of melodies I'm typically known for making.",
+"One of my favourite beats, this track was a massive mutation of another song, where I took two components and decided to try and make an atmospheric piece out of it. The moment I realised how good the panning synth that repeats across the whole song sounds, it felt natural to continue. ",
+"A hip hop inspired song, I found myself listening to this song for hours as I was making it. Very likely the most hypnotic song I've ever made in my opinion. This is one of those tracks where I can't particularly pick a favourite component, it was a joy to continously add new components to this one.",
+"Following some advice from a friend to make more simple, memorable melodies, I decided to do just that and make a song that was focused much more on the drum programming. This is one of the most memorable songs I ever worked on.",
+"I was very inspired to try and make a song inspired by elements of New Jack Swing and Rap Rock, but with the twist that the instrumentation is still very heavily coded in my style. I was still very new to using drum breaks, so the use of one on this song was a massive indicator to me that I could continue with the sound I desired. I had tried years ago to get a very heavy sound similar to what was achieved here, but I suppose I needed more experience before tackling something that difficult.",
+"After practicing some more with drum breaks, I decided to jump straight into making a song inspired from my childhood vision of a very overly energetic and emotional sounding EDM boss fight song, only this time influenced more by breakcore."
+
+
+];
+
+document.getElementById("songTitle").innerText = titles[songId];
+document.getElementById("songYear").innerText = years[songId];
+document.getElementById("songOrigin").innerText = origins[songId];
+document.getElementById("songDescription").innerText = descriptions[songId];
+
+
+
+songMax = 8;
+
+
+document.getElementById("audio").loop = true;
+}
+			</script>
+
+
+
+  </div>	
+  </body>
