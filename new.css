@@ -14,8 +14,8 @@ body{
 
 .entity {
   display: block;
-width: 102.857vh;
-height: 90vh;
+width: 50vw;
+height: 0;
 
 margin-left: auto;
 margin-right: auto;
@@ -27,8 +27,8 @@ background-color: black;
 background-image: var(--my-var);
 background-repeat: no-repeat;
 background-size: 100%;
-width: 102.857vh;
-height: 90vh;
+width: 50vw;
+height: 90vw;
 
 margin-left: auto;
 margin-right: auto;
@@ -44,10 +44,10 @@ transition: background-image 0.2s;
 position: relative;
   display: block;
   margin-left: auto;
-  width: 30vh;
-	height: 10vh;
-	top: -20vh;
-	left: -34vh;
+  width: 15vw;
+	height: 5vw;
+	top: -57vw;
+	left: -17vw;
   margin-right: auto;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -64,10 +64,10 @@ background-color: transparent;
 position: relative;
   display: block;
   margin-left: auto;
-  width: 30vh;
-	height: 10vh;
-	top: -20vh;
-	left: -34vh;
+  width: 15vw;
+	height: 5vw;
+	top: -57vw;
+	left: -17vw;
   margin-right: auto;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -89,16 +89,16 @@ position: relative;
 position: relative;
 margin-left: auto;
 margin-right: auto;
-width: 100.857vh;
-height: 1vh;
-	left: 1vh;
-	top: 0vh;
+width: 50vw;
+height: 1vw;
+	left: 1vw;
+	top: 0vw;
 	color: black;
 -webkit-font-smoothing : none;
 	font-family: LCD Solid;
 font-smooth: never;
 
-font-size: 3.5vh;
+font-size: 1.7vw;
   font-weight: lighter;
 
 }
@@ -112,16 +112,16 @@ font-size: 3.5vh;
 position: relative;
 margin-left: auto;
 margin-right: auto;
-width: 102.857vh;
-height: 1vh;
-	left: 38vh;
-	top: 31vh;
+width: 50vw;
+height: 1vw;
+	left: 19vw;
+	top: 15.5vw;
 	color: black;
 -webkit-font-smoothing : none;
 	font-family: LCD Solid;
 font-smooth: never;
 
-font-size: 3.5vh;
+font-size: 1.7vw;
   font-weight: lighter;
 
 
@@ -133,32 +133,32 @@ font-size: 3.5vh;
 position: relative;
 display: block;
 margin-left: auto;
-width: 40vh;
-height: 30vh;
-top: -40vh;
-left: -3vh;
+width: 15vw;
+height: 10vw;
+top: -65vw;
+left: -1vw;
 background-size: 100%;
-background: transparent;
+
 
   margin-right: auto;
   background-size: 100%;
   background-repeat: no-repeat;
   z-index: 5;
-
+background-color: transparent;
 border: none;
-  
+background-color: transparent;
 }
 
 .thebutton2{
 position: relative;
 display: block;
 margin-left: auto;
-width: 45vh;
-height: 45vh;
-top: -135vh;
-left: -25vh;
+width: 45vw;
+height: 45vw;
+top: -135vw;
+left: -25vw;
 background-size: 100%;
-background: transparent;
+background-color: transparent;
 
   margin-right: auto;
   background-size: 100%;
@@ -173,12 +173,12 @@ border: none;
 position: relative;
 display: block;
 margin-left: auto;
-width: 45vh;
-height: 45vh;
-top: -180vh;
-left: 25vh;
+width: 45vw;
+height: 45vw;
+top: -180vw;
+left: 25vw;
 background-size: 100%;
-background: transparent;
+background-color: transparent;
 
   margin-right: auto;
   background-size: 100%;
@@ -192,12 +192,12 @@ border: none;
 position: relative;
 display: block;
 margin-left: auto;
-width: 45vh;
-height: 45vh;
-top: -175vh;
-left: -25vh;
+width: 45vw;
+height: 45vw;
+top: -175vw;
+left: -25vw;
 background-size: 100%;
-background: transparent;
+background-color: transparent;
 
   margin-right: auto;
   background-size: 100%;
@@ -208,13 +208,13 @@ border: none;
 }
 
 .musicplay{
-position: relative;
+position: absolute;
   display: block;
   margin-left: auto;
-  width: 6vh;
-	height: 6vh;
-	top: -205vh;
-	left: -45vh;
+  width: 2.5vw;
+	height: 2.5vw;
+	top: 33.5vw;
+	left: 25.5vw;
   margin-right: auto;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -226,13 +226,13 @@ background-color: transparent;
 
 }
 .musicplay:hover{
-position: relative;
+position: absolute;
   display: block;
   margin-left: auto;
-  width: 7vh;
-	height: 7vh;
-	top: -205vh;
-	left: -45vh;
+  width: 3vw;
+	height: 3vw;
+	top: 33.5vw;
+	left: 25.5vw;
   margin-right: auto;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -245,13 +245,13 @@ background-color: transparent;
 }
 
 .musicpause{
-position: relative;
+position: absolute;
   display: block;
   margin-left: auto;
-  width: 6vh;
-	height: 6vh;
-	top: -211vh;
-	left: -38vh;
+  width: 2.5vw;
+	height: 2.5vw;
+	top: 33.5vw;
+	left: 28.5vw;
   margin-right: auto;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -263,13 +263,13 @@ background-color: transparent;
 
 }
 .musicpause:hover{
-position: relative;
+position: absolute;
   display: block;
   margin-left: auto;
-  width: 7vh;
-	height: 7vh;
-	top: -211vh;
-	left: -38vh;
+  width: 3vw;
+	height: 3vw;
+	top: 33.5vw;
+	left: 28.5vw;
   margin-right: auto;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -281,13 +281,13 @@ background-color: transparent;
 
 }
 .musicstop{
-position: relative;
+position: absolute;
   display: block;
   margin-left: auto;
-  width: 6vh;
-	height: 6vh;
-	top: -217vh;
-	left: -31vh;
+  width: 2.5vw;
+	height: 2.5vw;
+	top: 33.5vw;
+	left: 31.5vw;
   margin-right: auto;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -299,13 +299,13 @@ background-color: transparent;
 
 }
 .musicstop:hover{
-position: relative;
+position: absolute;
   display: block;
   margin-left: auto;
-  width: 7vh;
-	height: 7vh;
-	top: -217vh;
-	left: -31vh;
+  width: 3vw;
+	height: 3vw;
+	top: 33.5vw;
+	left: 31.5vw;
   margin-right: auto;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -317,13 +317,13 @@ background-color: transparent;
 
 }
 .musicback{
-position: relative;
+position: absolute;
   display: block;
   margin-left: auto;
-  width: 6vh;
-	height: 6vh;
-	top: -229vh;
-	left: -24vh;
+  width: 2.5vw;
+	height: 2.5vw;
+	top: 33.5vw;
+	left: 34.5vw;
   margin-right: auto;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -335,13 +335,13 @@ background-color: transparent;
 
 }
 .musicback:hover{
-position: relative;
+position: absolute;
   display: block;
   margin-left: auto;
-  width: 7vh;
-	height: 7vh;
-	top: -229vh;
-	left: -24vh;
+  width: 3vw;
+	height: 3vw;
+	top: 33.5vw;
+	left: 34.5vw;
   margin-right: auto;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -355,13 +355,13 @@ background-color: transparent;
 
 
 .musicnext{
-position: relative;
+position: absolute;
   display: block;
   margin-left: auto;
-  width: 6vh;
-	height: 6vh;
-	top: -223vh;
-	left: -17vh;
+  width: 2.5vw;
+	height: 2.5vw;
+	top: 33.5vw;
+	left: 37.5vw;
   margin-right: auto;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -373,13 +373,13 @@ background-color: transparent;
 
 }
 .musicnext:hover{
-position: relative;
+position: absolute;
   display: block;
   margin-left: auto;
-  width: 7vh;
-	height: 7vh;
-	top: -223vh;
-	left: -17vh;
+  width: 3vw;
+	height: 3vw;
+	top: 33.5vw;
+	left: 37.5vw;
   margin-right: auto;
   background-size: 100%;
   background-repeat: no-repeat;
