@@ -4,10 +4,38 @@
 
   <head>
 	<meta name="viewport" content= "initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="new.css">
+
 		<title>Kevin Nguyen Portfolio</title>
 <link rel="icon" type="image/png" sizes="32x32" href=url("icon.png")>  
   
+
+<script>
+
+var cssPath = "new.css";
+if (navigator.platform == "Android")
+    cssPath = "new2.css";
+if (navigator.platform == "iPhone")
+    cssPath = "new2.css";
+
+var fileref = document.createElement("link");
+
+fileref.setAttribute("rel", "stylesheet");
+fileref.setAttribute("href", cssPath);
+
+document.getElementsByTagName("head")[0].appendChild(fileref);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
   </head>
   
   <body onload = "welcome()">
